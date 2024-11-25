@@ -76,6 +76,11 @@ nav a:hover {
     color: #333;
     text-decoration: none;
 }
+.product1{ 
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
 
 /* User Navigation - matching original user-actions */
 .user-nav ul {
