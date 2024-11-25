@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <form>
+            <input type="text" placeholder="søk her">
+            <button type="submit" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    
+        <nav>
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#product">Produkter</a></li>
+            </ul>
+        </nav>
+    
+        <h1>Logo</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#categories">Kategorier</a></li>
+                <li><a href="#footer-contact">Kontakt oss</a></li>
+            </ul>
+        </nav>
+    
+        <nav class="user-nav">
+            <ul>
+                <li><a href="#account" aria-label="My Account">
+                    <i class="far fa-user"></i>
+                </a></li>
+                <li><a href="#wishlist" aria-label="Wishlist">
+                    <i class="far fa-heart"></i>
+                </a></li>
+                <li><a href="cart.html" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-page">
+            <article class="product-container">
+                <section class="product-gallery">
+                    <section class="thumbnail-column">
+                        <img src="images/pepejeans.jpg" alt="Brudekjole sett forfra" class="thumbnail">
+                        <img src="images/pepejeans.jpg" alt="Brudekjole sett bakfra" class="thumbnail">
+                        <img src="images/pepejeans.jpg" alt="Brudekjole detalj" class="thumbnail">
+                    </section>
+                    <figure class="main-image">
+                        <img src="images/pepejeans.jpg" alt="Brudekjole hovedbilde">
+                    </figure>
+                </section>
+        
+                <section class="product-info">
+                    <p class="price">5 195 kr inkl. mva.</p>
+                    
+                    <section class="product-options">
+                        <label for="color">Farge: <span class="color-value">beige</span></label>
+                        
+                        <label for="size">Velg størrelse</label>
+                        <select name="size" id="size">
+                            <option value="">Velg størrelse</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                        
+                        <section class="action-buttons">
+                            <button class="add-to-cart">Legg i handlekurv</button>
+                            <button class="add-to-wishlist" aria-label="Legg til i ønskeliste">♡</button>
+                        </section>
+                    </section>
+                    
+                    <details class="product-info-section">
+                        <summary>Matriale og vedlikehold</summary>
+                        <p>Produktinformasjon og vedlikeholdsinstruksjoner kommer her.</p>
+                    </details>
+                    
+                    <details class="product-info-section">
+                        <summary>Produktdetaljer</summary>
+                        <p>Produktdetaljer kommer her.</p>
+                    </details>
+                    
+                    <details class="product-info-section">
+                        <summary>Størrelsestablell</summary>
+                        <p>Størrelsestablell kommer her.</p>
+                    </details>
+        
+                    <section class="reviews">
+                        <h2>Anmeldelser <span class="rating">★★★★☆ 32</span></h2>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <section class="related-products">
+            <div class="title-row">
+                <h2>Lignende produkter</h2>
+                <a href="/lignende-produkter" class="see-more">Se flere lignende produkter →</a>
+            </div>
+        
+            <section class="products-grid">
+                <article class="product-card">
+                    <img src="images/crocs.jpg" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Product name</h3>
+                    <p class="product-price">Kr 1999</p>
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">842 Reviews</span>
+                    </p>
+                </article>
+                <article class="product-card">
+                    <img src="images/crocs.jpg" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Product name</h3>
+                    <p class="product-price">Kr 1999</p>
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">842 Reviews</span>
+                    </p>
+                </article>
+                <article class="product-card">
+                    <img src="images/crocs.jpg" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Product name</h3>
+                    <p class="product-price">Kr 1999</p>
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">842 Reviews</span>
+                    </p>
+                </article>
+                <article class="product-card">
+                    <img src="images/crocs.jpg" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Product name</h3>
+                    <p class="product-price">Kr 1999</p>
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">842 Reviews</span>
+                    </p>
+                </article>
+                <article class="product-card">
+                    <img src="images/crocs.jpg" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Product name</h3>
+                    <p class="product-price">Kr 1999</p>
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">842 Reviews</span>
+                    </p>
+                </article>
+                <article class="product-card">
+                    <img src="images/crocs.jpg" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Product name</h3>
+                    <p class="product-price">Kr 1999</p>
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">842 Reviews</span>
+                    </p>
+                </article>
+            </section>
+        </section>
+        
+
+    </main>
+    <footer>
+        <hr class="separator">
+        
+        <section class="footer-content">
+            <section class="footer-logo">
+                <h2>Logo</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+            </section>
+            
+            <section class="footer-grid">
+                <section class="footer-contact" id="footer-contact">
+                    <h3>KONTAKT</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Andresse:</strong>
+                            <span>B R A Veien 4, 1757 Halden</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <strong>Telefon:</strong>
+                            <span>69 60 80 00</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <strong>E-post:</strong>
+                            <span>halden@hiof.no</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <strong>Åpningstider:</strong>
+                            <span>Stenger 15:00</span>
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="footer-links">
+                    <h3>SNARVEIER</h3>
+                    <ul>
+                        <li><a href="#product">Produkter</a></li>
+                        <li><a href="#categories">Kategorier</a></li>
+                        <li><a href="#footer-contact">Kontakt oss</a></li>
+                    </ul>
+                </section>
+    
+                <section class="footer-social">
+                    <h3>SOSIALE MEDIER</h3>
+                    <nav class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </nav>
+                </section>
+            </section>
+        </section>
+    </footer>
+    
+</body>
+</html>

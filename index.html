@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <form>
+            <input type="text" placeholder="søk her">
+            <button type="submit" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    
+        <nav>
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#product.html">Produkter</a></li>
+            </ul>
+        </nav>
+    
+        <h1>Logo</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#categories">Kategorier</a></li>
+                <li><a href="#footer-contact">Kontakt oss</a></li>
+            </ul>
+        </nav>
+    
+        <nav class="user-nav">
+            <ul>
+                <li><a href="#account" aria-label="My Account">
+                    <i class="far fa-user"></i>
+                </a></li>
+                <li><a href="#wishlist" aria-label="Wishlist">
+                    <i class="far fa-heart"></i>
+                </a></li>
+                <li><a href="cart.html" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section">
+            <div class="section-background" style="background-image: url('/api/placeholder/1200/800')"></div>
+            <div class="section-overlay"></div>
+            <button class="prev">←</button>
+            <button class="next">→</button>
+            <div class="section-content">
+                <h2>Et harum quidem rerum facilis est et expedita distinctio</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+                <a href="#" class="cta">LES MER</a>
+            </div>
+        </section>
+        <section class="products" id="product">
+            <h2>Våre mest populære produkter</h2>
+            <p>Oppdag det beste av det beste</p>
+            
+            <nav class="filter-nav">
+                <button class="active">New Product</button>
+                <button>Special Price</button>
+                <button>Best Sellers</button>
+            </nav>
+
+            <div class="product-grid">
+                <article class="product">
+                    <img src="images/evenjacket.jpg" alt="Product">
+                    <h3>Product name <span>Kr 1999</span></h3>
+                    <data value="4">★★★★☆</data>
+                    <small>842 Reviews</small>
+                </article>
+
+                <article class="product">
+                    <img src="images/evenjacket.jpg" alt="Product">
+                    <h3>Product name <span>Kr 1999</span></h3>
+                    <data value="4">★★★★☆</data>
+                    <small>842 Reviews</small>
+                </article>
+
+                <article class="product">
+                    <img src="images/evenjacket.jpg" alt="Product">
+                    <h3>Product name <span>Kr 1999</span></h3>
+                    <data value="4">★★★★☆</data>
+                    <small>842 Reviews</small>
+                </article>
+
+                <article class="product">
+                    <img src="images/evenjacket.jpg" alt="Product">
+                    <h3>Product name <span>Kr 1999</span></h3>
+                    <data value="4">★★★★☆</data>
+                    <small>842 Reviews</small>
+                </article>
+
+                <article class="product">
+                    <img src="images/evenjacket.jpg" alt="Product">
+                    <h3>Product name <span>Kr 1999</span></h3>
+                    <data value="4">★★★★☆</data>
+                    <small>842 Reviews</small>
+                </article>
+
+                <article class="product">
+                    <img src="images/evenjacket.jpg" alt="Product">
+                    <h3>Product name <span>Kr 1999</span></h3>
+                    <data value="4">★★★★☆</data>
+                    <small>842 Reviews</small>
+                </article>
+            </div>
+        </section>
+        <section class="categories" id="categories">
+            <h2>Våre mest populære kategorier</h2>
+            <p>Oppdag det beste av det beste</p>
+            
+            <div class="category-grid">
+                <a href="#" class="category">
+                    <img src="images/jeans.jpg" alt="Category 1">
+                    <h3>CATEGORY 1</h3>
+                </a>
+                
+                <a href="#" class="category">
+                    <img src="images/piecesjacket.jpg" alt="Category 2">
+                    <h3>CATEGORY 2</h3>
+                </a>
+        
+                <a href="#" class="category">
+                    <img src="images/crocs.jpg" alt="Category 3">
+                    <h3>CATEGORY 3</h3>
+                </a>
+        
+                <a href="#" class="category">
+                    <img src="images/Accessories.jpg" alt="Category 4">
+                    <h3>CATEGORY 4</h3>
+                </a>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2>Anmeldelser</h2>
+            <p>Hva våre kunder sier</p>
+            
+            <div class="reviews-grid">
+                <article class="review">
+                    <img src="images/profile3.jpg" alt="Reviewer">
+                    <h3>Rober Labrador</h3>
+                    <p class="rating">★★★☆☆</p>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                </article>
+        
+                <article class="review">
+                    <img src="images/profile4.jpg" alt="Reviewer">
+                    <h3>Rober Labrador</h3>
+                    <p class="rating">★★★☆☆</p>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                </article>
+        
+                <article class="review">
+                    <img src="images/profile3.jpg" alt="Reviewer">
+                    <h3>Rober Labrador</h3>
+                    <p class="rating">★★★☆☆</p>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                </article>
+        
+                <article class="review">
+                    <img src="images/profile4.jpg" alt="Reviewer">
+                    <h3>Rober Labrador</h3>
+                    <p class="rating">★★★☆☆</p>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr class="separator">
+        
+        <section class="footer-content">
+            <section class="footer-logo">
+                <h2>Logo</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+            </section>
+            
+            <section class="footer-grid">
+                <section class="footer-contact" id="footer-contact">
+                    <h3>KONTAKT</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Andresse:</strong>
+                            <span>B R A Veien 4, 1757 Halden</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <strong>Telefon:</strong>
+                            <span>69 60 80 00</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <strong>E-post:</strong>
+                            <span>halden@hiof.no</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <strong>Åpningstider:</strong>
+                            <span>Stenger 15:00</span>
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="footer-links">
+                    <h3>SNARVEIER</h3>
+                    <ul>
+                        <li><a href="#product">Produkter</a></li>
+                        <li><a href="#categories">Kategorier</a></li>
+                        <li><a href="#footer-contact">Kontakt oss</a></li>
+                    </ul>
+                </section>
+    
+                <section class="footer-social">
+                    <h3>SOSIALE MEDIER</h3>
+                    <nav class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </nav>
+                </section>
+            </section>
+        </section>
+    </footer>
+    
+</body>
+</html>
