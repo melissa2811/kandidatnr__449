@@ -169,7 +169,7 @@ nav a:hover {
 }
 
 .hero p {
-    color: #333;
+    color: #fff;
     margin-bottom: 2rem;
 }
 
@@ -188,7 +188,7 @@ nav a:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
+/*  */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -259,11 +259,20 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-    .hero {
-        margin: 0;
+    .section-background {
+        border-radius: 0;  
+        width: 100vw;      
+        left: 0;           
+        right: 0;        
+        margin-left: -1rem; 
+        margin-right: -1rem; 
     }
     
-    .section-background,
+    .hero {
+        margin: 0;
+        padding: 0;
+    }
+    
     .section-overlay {
         border-radius: 0;
     }
@@ -279,6 +288,17 @@ nav a:hover {
     .prev, .next {
         width: 30px;
         height: 30px;
+        top: auto;       
+        bottom: 1rem;      
+        transform: none;    
+    }
+
+    .prev {
+        left: 1rem;       
+    }
+    
+    .next {
+        right: 1rem;       
     }
 }
 .products {
