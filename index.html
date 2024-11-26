@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keza - Your fashion destination for quality clothing and accessories">
     <title>Keza Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header>
         <form>
             <input type="text" placeholder="søk her">
@@ -21,13 +22,18 @@
                 <li><a href="#product">Produkter</a></li>
             </ul>
         </nav>
+
         <a href="index.html" class="logo1"><h1>Logo</h1> </a> 
+
+        
+    
         <nav>
             <ul>
                 <li><a href="#categories">Kategorier</a></li>
                 <li><a href="#footer-contact">Kontakt oss</a></li>
             </ul>
         </nav>
+    
         <nav class="user-nav">
             <ul>
                 <li><a href="#account" aria-label="My Account">
@@ -42,6 +48,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="hero section">
             <img class="section-background" src="images/navpic.jpg" alt="">
@@ -58,83 +65,137 @@
                 <a href="#product" class="cta">SHOP MER </a>
             </article>
         </section>
-        <section class="products" id="product">
-            <h2>Våre mest populære produkter</h2>
-            <p>Oppdag det beste av det beste</p>
-            <nav class="filter-nav">
-                <button class="active">New Product</button>
-                <button>Special Price</button>
-                <button>Best Sellers</button>
+        <section class="products" id="product" itemscope itemtype="https://schema.org/ItemList">
+            
+            <h2 itemprop="name">Våre mest populære produkter</h2>
+            <p itemprop="description">Oppdag det beste av det beste</p>
+            
+            <nav class="filter-nav" aria-label="Product filters">
+                <button class="active" aria-pressed="true">New Product</button>
+                <button aria-pressed="false">Special Price</button>
+                <button aria-pressed="false">Best Sellers</button>
             </nav>
-            <div  class="product-grid"> 
-                <article class="product">
-                    <a  href="product.html" class="product1">
-                        <img src="images/evenjacket.jpg" alt="Product">
-                        <h3>Faux leather jacket <span>Kr 1600</span></h3>
-                        <data value="4">★★★★☆</data>
-                        <small>842 Reviews</small>
+           
+            <div class="product-grid" role="list"> 
+                <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
+                    <a href="product.html" class="product1">
+                        <img src="images/evenjacket.jpg" alt="Faux leather jacket" itemprop="image">
+                        <h3><span itemprop="name">Faux leather jacket</span> 
+                            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">1600</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                            </span>
+                        </h3>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <data value="4" itemprop="ratingValue">★★★★☆</data>
+                            <meta itemprop="reviewCount" content="842">
+                            <small>842 Reviews</small>
+                        </div>
                     </a>   
                 </article>
-                <article class="product">
-                    <a  href="product.html" class="product1">
-                        <img src="images/purpledress.jpg" alt="Product">
-                        <h3>BELTED GEORGETTE DRESS <span>Kr 500</span></h3>
-                        <data value="4">★★★★☆</data>
-                        <small>842 Reviews</small>
+                <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
+                    <a href="product.html" class="product1">
+                        <img src="images/evenjacket.jpg" alt="Faux leather jacket" itemprop="image">
+                        <h3><span itemprop="name">Faux leather jacket</span> 
+                            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">1600</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                            </span>
+                        </h3>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <data value="4" itemprop="ratingValue">★★★★☆</data>
+                            <meta itemprop="reviewCount" content="842">
+                            <small>842 Reviews</small>
+                        </div>
                     </a>   
                 </article>
-                <article class="product">
-                    <a  href="product.html" class="product1">
-                        <img src="images/reddress.jpg" alt="Product">
-                        <h3>VMWILLOW <span>Kr 500</span></h3>
-                        <data value="4">★★★★☆</data>
-                        <small>842 Reviews</small>
+                <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
+                    <a href="product.html" class="product1">
+                        <img src="images/evenjacket.jpg" alt="Faux leather jacket" itemprop="image">
+                        <h3><span itemprop="name">Faux leather jacket</span> 
+                            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">1600</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                            </span>
+                        </h3>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <data value="4" itemprop="ratingValue">★★★★☆</data>
+                            <meta itemprop="reviewCount" content="842">
+                            <small>842 Reviews</small>
+                        </div>
                     </a>   
                 </article>
-                <article class="product">
-                    <a  href="product.html" class="product1">
-                        <img src="images/bluedress.jpg" alt="Product">
-                        <h3>Day dress - augua <span>Kr 400</span></h3>
-                        <data value="4">★★★★☆</data>
-                        <small>842 Reviews</small>
+                <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
+                    <a href="product.html" class="product1">
+                        <img src="images/evenjacket.jpg" alt="Faux leather jacket" itemprop="image">
+                        <h3><span itemprop="name">Faux leather jacket</span> 
+                            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">1600</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                            </span>
+                        </h3>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <data value="4" itemprop="ratingValue">★★★★☆</data>
+                            <meta itemprop="reviewCount" content="842">
+                            <small>842 Reviews</small>
+                        </div>
                     </a>   
                 </article>
-                <article class="product">
-                    <a  href="product.html" class="product1">
-                        <img src="images/adidassamba.jpg" alt="Product">
-                        <h3>SAMBA OG - Trainers<span>Kr 1300</span></h3>
-                        <data value="4">★★★★☆</data>
-                        <small>842 Reviews</small>
+                <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
+                    <a href="product.html" class="product1">
+                        <img src="images/evenjacket.jpg" alt="Faux leather jacket" itemprop="image">
+                        <h3><span itemprop="name">Faux leather jacket</span> 
+                            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">1600</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                            </span>
+                        </h3>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <data value="4" itemprop="ratingValue">★★★★☆</data>
+                            <meta itemprop="reviewCount" content="842">
+                            <small>842 Reviews</small>
+                        </div>
                     </a>   
                 </article>
-                <article class="product">
-                    <a  href="product.html" class="product1">
-                        <img src="images/valationbag.jpg" alt="Product">
-                        <h3>ALEXIA - Handbag - perla <span>Kr 1500</span></h3>
-                        <data value="4">★★★★☆</data>
-                        <small>842 Reviews</small>
+                <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
+                    <a href="product.html" class="product1">
+                        <img src="images/evenjacket.jpg" alt="Faux leather jacket" itemprop="image">
+                        <h3><span itemprop="name">Faux leather jacket</span> 
+                            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">1600</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                            </span>
+                        </h3>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <data value="4" itemprop="ratingValue">★★★★☆</data>
+                            <meta itemprop="reviewCount" content="842">
+                            <small>842 Reviews</small>
+                        </div>
                     </a>   
                 </article>
             </div>
         </section>
-        <section class="categories" id="categories">
+        <section class="categories" id="categories" itemscope itemtype="https://schema.org/ItemList">
             <h2>Våre mest populære kategorier</h2>
             <p>Oppdag det beste av det beste</p>
+            
             <div class="category-grid">
-                <a href="#" class="category">
+                <a href="#" class="category" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <img src="images/Streetwear.jpg" alt="Category 1">
                     <h3>CATEGORY 1</h3>
                 </a>
-                <a href="#" class="category">
+                
+                <a href="#" class="category" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <img src="images/piecesjacket.jpg" alt="Category 2">
                     <h3>CATEGORY 2</h3>
                 </a>
-                <a href="#" class="category">
+        
+                <a href="#" class="category" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <img src="images/crocs.jpg" alt="Category 3">
                     <h3>CATEGORY 3</h3>
                 </a>
         
-                <a href="#" class="category">
+                <a href="#" class="category" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <img src="images/Accessories.jpg" alt="Category 4">
                     <h3>CATEGORY 4</h3>
                 </a>
@@ -143,6 +204,7 @@
         <section class="reviews">
             <h2>Anmeldelser</h2>
             <p>Hva våre kunder sier</p>
+            
             <div class="reviews-grid">
                 <article class="review">
                     <img src="images/profile3.jpg" alt="Reviewer">
@@ -150,18 +212,21 @@
                     <p class="rating">★★★☆☆</p>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
                 </article>
+        
                 <article class="review">
                     <img src="images/profile4.jpg" alt="Reviewer">
                     <h3>Rober Labrador</h3>
                     <p class="rating">★★★☆☆</p>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
                 </article>
+        
                 <article class="review">
                     <img src="images/profile3.jpg" alt="Reviewer">
                     <h3>Rober Labrador</h3>
                     <p class="rating">★★★☆☆</p>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
                 </article>
+        
                 <article class="review">
                     <img src="images/profile4.jpg" alt="Reviewer">
                     <h3>Rober Labrador</h3>
@@ -171,41 +236,47 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer itemscope itemtype="https://schema.org/Organization">
         <hr class="separator">
         
         <section class="footer-content">
             <section class="footer-logo">
-                <h2>Logo</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                <h2 itemprop="name">Logo</h2>
+                <p itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
             </section>
             
             <section class="footer-grid">
-                <section class="footer-contact" id="footer-contact">
+                <section class="footer-contact" id="footer-contact" itemscope itemtype="https://schema.org/LocalBusiness">
                     <h3>KONTAKT</h3>
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
                             <strong>Andresse:</strong>
-                            <span>B R A Veien 4, 1757 Halden</span>
+                            <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">B R A Veien 4</span>,
+                                <span itemprop="postalCode">1757</span>
+                                <span itemprop="addressLocality">Halden</span>
+                            </span>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
                             <strong>Telefon:</strong>
-                            <span>69 60 80 00</span>
+                            <span itemprop="telephone">69 60 80 00</span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
                             <strong>E-post:</strong>
-                            <span>halden@hiof.no</span>
+                            <span itemprop="email">halden@hiof.no</span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
                             <strong>Åpningstider:</strong>
-                            <span>Stenger 15:00</span>
+                            <span itemprop="openingHours">Stenger 15:00</span>
                         </li>
                     </ul>
                 </section>
+    
+               
     
                 <section class="footer-links">
                     <h3>SNARVEIER</h3>
@@ -218,16 +289,19 @@
     
                 <section class="footer-social">
                     <h3>SOSIALE MEDIER</h3>
-                    <nav class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <nav class="social-links" aria-label="Social media links">
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a>
                     </nav>
                 </section>
             </section>
         </section>
     </footer>
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     
 </body>
 </html>

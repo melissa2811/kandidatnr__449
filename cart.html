@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keza - Your fashion destination for quality clothing and accessories">
     <title>Keza Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header>
         <form>
             <input type="text" placeholder="søk her">
@@ -382,63 +383,72 @@
         </article>
         
     </main>
-    <footer>
+    <footer itemscope itemtype="https://schema.org/Organization">
         <hr class="separator">
         
         <section class="footer-content">
             <section class="footer-logo">
-                <h2>Logo</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                <h2 itemprop="name">Logo</h2>
+                <p itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
             </section>
             
             <section class="footer-grid">
-                <section class="footer-contact" id="footer-contact">
+                <section class="footer-contact" id="footer-contact" itemscope itemtype="https://schema.org/LocalBusiness">
                     <h3>KONTAKT</h3>
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
                             <strong>Andresse:</strong>
-                            <span>B R A Veien 4, 1757 Halden</span>
+                            <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">B R A Veien 4</span>,
+                                <span itemprop="postalCode">1757</span>
+                                <span itemprop="addressLocality">Halden</span>
+                            </span>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
                             <strong>Telefon:</strong>
-                            <span>69 60 80 00</span>
+                            <span itemprop="telephone">69 60 80 00</span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
                             <strong>E-post:</strong>
-                            <span>halden@hiof.no</span>
+                            <span itemprop="email">halden@hiof.no</span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
                             <strong>Åpningstider:</strong>
-                            <span>Stenger 15:00</span>
+                            <span itemprop="openingHours">Stenger 15:00</span>
                         </li>
                     </ul>
                 </section>
     
+               
+    
                 <section class="footer-links">
                     <h3>SNARVEIER</h3>
                     <ul>
-                        <li><a href="product.html">Produkter</a></li>
-                        <li><a href="index.html#categories">Kategorier</a></li>
+                        <li><a href="#product">Produkter</a></li>
+                        <li><a href="#categories">Kategorier</a></li>
                         <li><a href="#footer-contact">Kontakt oss</a></li>
                     </ul>
                 </section>
     
                 <section class="footer-social">
                     <h3>SOSIALE MEDIER</h3>
-                    <nav class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <nav class="social-links" aria-label="Social media links">
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a>
                     </nav>
                 </section>
             </section>
         </section>
     </footer>
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     
 </body>
 </html>
