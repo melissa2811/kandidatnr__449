@@ -18,8 +18,8 @@
         </form>
         <nav>
             <ul>
-                <li><a href="#">Hjem</a></li>
-                <li><a href="#product">Produkter</a></li>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#product">Produkter</a></li>
             </ul>
         </nav>
 
@@ -51,19 +51,50 @@
 
     <main>
         <section class="hero section">
-            <img class="section-background" src="images/navpic.jpg" alt="">
-            <span class="section-overlay"></span>
-            <button class="prev">←</button>
-            <button class="next">→</button>
-            <article class="section-content">
-                <h2>
-                    New hidden treasures to shop!
-                    Cyber Week with up to 50% off
-                    
-                </h2>
-                <p>Designer Fashion for Women </p>
-                <a href="#product" class="cta">SHOP MER </a>
-            </article>
+            <!--  this part is my navigation that is on the top  -->
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+        
+            <!--  this is my first slid at  my navigation -->
+            <section class="slide">
+                <img class="section-background" src="images/adidassamba.jpg" alt="Adidas Samba">
+                <span class="section-overlay"></span>
+                <article class="section-content">
+                    <h2>New hidden treasures to shop! Cyber Week with up to 50% off</h2>
+                    <p>Designer Fashion for Women</p>
+                    <a href="#product" class="cta">SHOP MER</a>
+                </article>
+            </section>
+        
+            <!--this is my second slid at  my navigation  -->
+            <section class="slide">
+                <img class="section-background" src="images/fashion.jpg" alt="Second slide">
+                <span class="section-overlay"></span>
+                <article class="section-content">
+                    <h2>Summer Collection 2024</h2>
+                    <p>Exclusive Designs</p>
+                    <a href="#summer" class="cta">DISCOVER</a>
+                </article>
+            </section>
+        
+            <!-- this is my thrid slid at  my navigation -->
+            <section class="slide">
+                <img class="section-background" src="images/alica.jpg" alt="Third slide">
+                <span class="section-overlay"></span>
+                <article class="section-content">
+                    <h2>Limited Edition Items</h2>
+                    <p>Premium Selection</p>
+                    <a href="#limited" class="cta">SHOP NOW</a>
+                </article>
+            </section>
+        
+            <!--  this code i used it to just have the 3 dotes on the slids images -->
+            <section class="slider-nav">
+                <label for="slide1" class="slide-dot"></label>
+                <label for="slide2" class="slide-dot"></label>
+                <label for="slide3" class="slide-dot"></label>
+            </section>
         </section>
         <section class="products" id="product" itemscope itemtype="https://schema.org/ItemList">
             
@@ -75,7 +106,7 @@
                 <button aria-pressed="false">Special Price</button>
                 <button aria-pressed="false">Best Sellers</button>
             </nav>
-           
+           <!-- this part is the one for the product part it has the link of the product.html -->
             <div class="product-grid" role="list"> 
                 <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
                     <a href="product.html" class="product1">
@@ -102,11 +133,11 @@
                                 <meta itemprop="priceCurrency" content="NOK">
                             </span>
                         </h3>
-                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <data value="4" itemprop="ratingValue">★★★★☆</data>
                             <meta itemprop="reviewCount" content="842">
                             <small>842 Reviews</small>
-                        </div>
+                        </section>
                     </a>   
                 </article>
                 <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
@@ -118,11 +149,11 @@
                                 <meta itemprop="priceCurrency" content="NOK">
                             </span>
                         </h3>
-                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <data value="4" itemprop="ratingValue">★★★★☆</data>
                             <meta itemprop="reviewCount" content="842">
                             <small>842 Reviews</small>
-                        </div>
+                        </section>
                     </a>   
                 </article>
                 <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
@@ -134,11 +165,11 @@
                                 <meta itemprop="priceCurrency" content="NOK">
                             </span>
                         </h3>
-                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <data value="4" itemprop="ratingValue">★★★★☆</data>
                             <meta itemprop="reviewCount" content="842">
                             <small>842 Reviews</small>
-                        </div>
+                        </section>
                     </a>   
                 </article>
                 <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
@@ -150,11 +181,11 @@
                                 <meta itemprop="priceCurrency" content="NOK">
                             </span>
                         </h3>
-                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <data value="4" itemprop="ratingValue">★★★★☆</data>
                             <meta itemprop="reviewCount" content="842">
                             <small>842 Reviews</small>
-                        </div>
+                        </section>
                     </a>   
                 </article>
                 <article class="product" itemscope itemtype="https://schema.org/Product" role="listitem">
@@ -166,11 +197,11 @@
                                 <meta itemprop="priceCurrency" content="NOK">
                             </span>
                         </h3>
-                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <data value="4" itemprop="ratingValue">★★★★☆</data>
                             <meta itemprop="reviewCount" content="842">
                             <small>842 Reviews</small>
-                        </div>
+                        </section>
                     </a>   
                 </article>
             </div>
@@ -178,7 +209,7 @@
         <section class="categories" id="categories" itemscope itemtype="https://schema.org/ItemList">
             <h2>Våre mest populære kategorier</h2>
             <p>Oppdag det beste av det beste</p>
-            
+            <!-- same thing  there this the category part  the a grid-->
             <div class="category-grid">
                 <a href="#" class="category" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <img src="images/Streetwear.jpg" alt="Category 1">
@@ -209,34 +240,22 @@
                 <article class="review" itemscope itemtype="https://schema.org/Review">
                     <img src="images/profile3.jpg" alt="Profile photo of Rober Labrador" itemprop="author">
                     <h3 itemprop="author">Rober Labrador</h3>
-                    <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                    <section itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <p class="rating">
                             <span itemprop="ratingValue">3</span>★★★☆☆
                         </p>
-                    </div>
+                    </section>
                     <p itemprop="reviewBody">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
                 </article>
         
                 <article class="review" itemscope itemtype="https://schema.org/Review">
                     <img src="images/profile3.jpg" alt="Profile photo of Rober Labrador" itemprop="author">
                     <h3 itemprop="author">Rober Labrador</h3>
-                    <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                    <section itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <p class="rating">
                             <span itemprop="ratingValue">3</span>★★★☆☆
                         </p>
-                    </div>
-                    <p itemprop="reviewBody">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
-                </article>
-        
-        
-                <article class="review" itemscope itemtype="https://schema.org/Review">
-                    <img src="images/profile3.jpg" alt="Profile photo of Rober Labrador" itemprop="author">
-                    <h3 itemprop="author">Rober Labrador</h3>
-                    <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                        <p class="rating">
-                            <span itemprop="ratingValue">3</span>★★★☆☆
-                        </p>
-                    </div>
+                    </section>
                     <p itemprop="reviewBody">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
                 </article>
         
@@ -244,11 +263,23 @@
                 <article class="review" itemscope itemtype="https://schema.org/Review">
                     <img src="images/profile3.jpg" alt="Profile photo of Rober Labrador" itemprop="author">
                     <h3 itemprop="author">Rober Labrador</h3>
-                    <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                    <section itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <p class="rating">
                             <span itemprop="ratingValue">3</span>★★★☆☆
                         </p>
-                    </div>
+                    </section>
+                    <p itemprop="reviewBody">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                </article>
+        
+        
+                <article class="review" itemscope itemtype="https://schema.org/Review">
+                    <img src="images/profile3.jpg" alt="Profile photo of Rober Labrador" itemprop="author">
+                    <h3 itemprop="author">Rober Labrador</h3>
+                    <section itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                        <p class="rating">
+                            <span itemprop="ratingValue">3</span>★★★☆☆
+                        </p>
+                    </section>
                     <p itemprop="reviewBody">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
                 </article>
         
